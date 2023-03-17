@@ -6,6 +6,9 @@ public class BinaryString {
         System.out.println(toBinaryString(23));
     }
     public static String toBinaryString(int value) {
+        if (value == 0) {
+            return "0";
+        }
         int x = value;
         int y;
         StringBuilder builder = new StringBuilder();
